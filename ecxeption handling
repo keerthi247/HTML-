@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exception Handling Example</title>
+</head>
+
+<body>
+
+<h2>Exception Handling in JavaScript</h2>
+
+<button onclick="myFunction()">Click Me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  try {
+    var a = 10;
+    var b = 0;
+
+    if(b == 0){
+      throw "Cannot divide by zero";
+    }
+
+    var c = a / b;
+    document.getElementById("demo").innerHTML = c;
+  }
+  catch(err) {
+    document.getElementById("demo").innerHTML = "Error: " + err;
+  }
+  finally {
+    console.log("Execution completed");
+  }
+}
+</script>
+
+</body>
+</html>
