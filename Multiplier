@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Multiplier</title>
+</head>
+<body>
+  <input type="number" id="num" placeholder="Enter a number">
+  <input type="number" id="multiplier" placeholder="Enter a multiplier">
+  <button id="multiply">Multiply</button>
+  <p id="result"></p>
+
+  <script>
+    document.getElementById('multiply').addEventListener('click', () => {
+      let num = parseFloat(document.getElementById('num').value);
+      let multiplier = parseFloat(document.getElementById('multiplier').value);
+      let result = num * multiplier;
+      document.getElementById('result').innerText = `The result is: ${result}`;
+    });
+  </script>
+</body>
+</html>
+
+Enter a number and a multiplier, and click the "Multiply" button to see the result! 😊
