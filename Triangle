@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Triangle Drawer</title>
+  <style>
+    .triangle {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 100px 173px 100px;
+      border-color: transparent transparent blue transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="triangle"></div>
+</body>
+</html>
+
+This code will draw a blue triangle using CSS borders. 😊
