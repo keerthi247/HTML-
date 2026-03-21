@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Textbox and Button Example</title>
+</head>
+<body>
+
+    <h2>Enter Your Name</h2>
+
+    <!-- Textbox -->
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <!-- Button -->
+    <button onclick="showMessage()">Submit</button>
+
+    <!-- Output -->
+    <p id="output"></p>
+
+    <script>
+        function showMessage() {
+            var name = document.getElementById("name").value;
+            document.getElementById("output").innerHTML = "Hello, " + name + "!";
+        }
+    </script>
+
+</body>
+</html>
