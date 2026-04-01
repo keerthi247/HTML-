@@ -1,0 +1,24 @@
+*Birthday Wishes Code*
+
+Here's a simple HTML and JavaScript code to generate birthday wishes:
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Birthday Wishes</title>
+</head>
+<body>
+  <input type="text" id="name" placeholder="Enter birthday person's name">
+  <button id="wish">Generate Wish</button>
+  <p id="wish-message"></p>
+
+  <script>
+    document.getElementById('wish').addEventListener('click', () => {
+      let name = document.getElementById('name').value;
+      let wishes = [
+        `Happy Birthday, ${name}! Wishing you a day filled with love and joy! 🎉`,
+        `Happy Birthday, ${name}! May all your dreams come true! 🎂`,
+        `Wishing a very happy birthday to an amazing person, ${name}! 🎊`,
+        `On your special day, ${name}, remember you're loved and cherished! 🎁`'re loved and cherished! 🎁`,
+        `Happy Birthday, ${name}! May this year bring you happiness and success! 😊`
+      ];
+    
