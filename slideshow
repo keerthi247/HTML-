@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Slideshow</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial;
+        }
+        img {
+            width: 500px;
+            height: 300px;
+        }
+        button {
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Simple Image Slideshow</h2>
+
+<img id="slide" src="img1.jpg">
+
+<br>
+
+<button onclick="prevSlide()">Previous</button>
+<button onclick="nextSlide()">Next</button>
+
+<script>
+    var images = ["img1.jpg", "img2.jpg", "img3.jpg"];
+    var index = 0;
+
+    function showSlide() {
+        document.getElementById("slide").src = images[index];
+    }
+
+    function nextSlide() {
+        index++;
+        if (index >= images.length) {
+            index = 0;
+        }
+        showSlide();
+    }
+
+    function prevSlide() {
+        index--;
+        if (index < 0) {
+            index = images.length - 1;
+        }
+        showSlide();
+    }
+</script>
+
+</body>
+</html>
