@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Home Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            text-align: center;
+            color: white;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            font-size: 28px;
+        }
+
+        nav {
+            margin: 20px;
+        }
+
+        nav a {
+            margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: black;
+        }
+
+        .content {
+            margin-top: 50px;
+        }
+
+        .content h1 {
+            font-size: 40px;
+        }
+
+        .content p {
+            font-size: 18px;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Welcome to My Website
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="content">
+    <h1>Hello, Welcome!</h1>
+    <p>This is a simple homepage created using HTML and CSS.</p>
+</div>
+
+<footer>
+    © 2026 My Website | All Rights Reserved
+</footer>
+
+</body>
+</html>
